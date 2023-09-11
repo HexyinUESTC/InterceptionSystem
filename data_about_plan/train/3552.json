@@ -1,0 +1,58 @@
+[
+    {
+        "Plan": {
+            "Node Type": "Other",
+            "Node Type ID": "42",
+            "Total Cost": 616055.360167,
+            "Plan Rows": 1.0,
+            "Plans": [
+                {
+                    "Node Type": "Other",
+                    "Node Type ID": "45",
+                    "Total Cost": 616055.345167,
+                    "Plan Rows": 2.0,
+                    "Plans": [
+                        {
+                            "Node Type": "Other",
+                            "Node Type ID": "42",
+                            "Total Cost": 615055.145167,
+                            "Plan Rows": 1.0,
+                            "Plans": [
+                                {
+                                    "Node Type": "Hash Join",
+                                    "Node Type ID": "38",
+                                    "Total Cost": 604932.077667,
+                                    "Plan Rows": 4049223.0,
+                                    "Plans": [
+                                        {
+                                            "Node Type": "Seq Scan",
+                                            "Node Type ID": "19",
+                                            "Relation Name": "cast_info",
+                                            "Total Cost": 441729.083333,
+                                            "Plan Rows": 10103417.0
+                                        },
+                                        {
+                                            "Node Type": "Other",
+                                            "Node Type ID": "47",
+                                            "Total Cost": 49168.880208,
+                                            "Plan Rows": 422288.0,
+                                            "Plans": [
+                                                {
+                                                    "Node Type": "Seq Scan",
+                                                    "Node Type ID": "19",
+                                                    "Relation Name": "title",
+                                                    "Total Cost": 49168.880208,
+                                                    "Plan Rows": 422288.0
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "Plan": {
+            "Node Type": "Other",
+            "Node Type ID": "42",
+            "Total Cost": 563674.800833,
+            "Plan Rows": 1.0,
+            "Plans": [
+                {
+                    "Node Type": "Other",
+                    "Node Type ID": "45",
+                    "Total Cost": 563674.785833,
+                    "Plan Rows": 2.0,
+                    "Plans": [
+                        {
+                            "Node Type": "Other",
+                            "Node Type ID": "42",
+                            "Total Cost": 562674.585833,
+                            "Plan Rows": 1.0,
+                            "Plans": [
+                                {
+                                    "Node Type": "Hash Join",
+                                    "Node Type ID": "38",
+                                    "Total Cost": 560197.570833,
+                                    "Plan Rows": 990802.0,
+                                    "Plans": [
+                                        {
+                                            "Node Type": "Seq Scan",
+                                            "Node Type ID": "19",
+                                            "Relation Name": "cast_info",
+                                            "Total Cost": 441729.083333,
+                                            "Plan Rows": 10103417.0
+                                        },
+                                        {
+                                            "Node Type": "Other",
+                                            "Node Type ID": "47",
+                                            "Total Cost": 75160.73125,
+                                            "Plan Rows": 103329.0,
+                                            "Plans": [
+                                                {
+                                                    "Node Type": "Hash Join",
+                                                    "Node Type ID": "38",
+                                                    "Total Cost": 75160.73125,
+                                                    "Plan Rows": 103329.0,
+                                                    "Plans": [
+                                                        {
+                                                            "Node Type": "Seq Scan",
+                                                            "Node Type ID": "19",
+                                                            "Relation Name": "title",
+                                                            "Total Cost": 49168.880208,
+                                                            "Plan Rows": 562851.0
+                                                        },
+                                                        {
+                                                            "Node Type": "Other",
+                                                            "Node Type ID": "47",
+                                                            "Total Cost": 15122.682292,
+                                                            "Plan Rows": 193435.0,
+                                                            "Plans": [
+                                                                {
+                                                                    "Node Type": "Seq Scan",
+                                                                    "Node Type ID": "19",
+                                                                    "Relation Name": "movie_info_idx",
+                                                                    "Total Cost": 15122.682292,
+                                                                    "Plan Rows": 193435.0
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

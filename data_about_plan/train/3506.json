@@ -1,0 +1,65 @@
+[
+    {
+        "Plan": {
+            "Node Type": "Other",
+            "Node Type ID": "42",
+            "Total Cost": 64148.700571,
+            "Plan Rows": 1.0,
+            "Plans": [
+                {
+                    "Node Type": "Nested Loop",
+                    "Node Type ID": "36",
+                    "Total Cost": 64148.688071,
+                    "Plan Rows": 1.0,
+                    "Plans": [
+                        {
+                            "Node Type": "Other",
+                            "Node Type ID": "45",
+                            "Total Cost": 64140.276458,
+                            "Plan Rows": 1.0,
+                            "Plans": [
+                                {
+                                    "Node Type": "Hash Join",
+                                    "Node Type ID": "38",
+                                    "Total Cost": 63140.176458,
+                                    "Plan Rows": 1.0,
+                                    "Plans": [
+                                        {
+                                            "Node Type": "Seq Scan",
+                                            "Node Type ID": "19",
+                                            "Relation Name": "movie_keyword",
+                                            "Total Cost": 48016.135417,
+                                            "Plan Rows": 103.0
+                                        },
+                                        {
+                                            "Node Type": "Other",
+                                            "Node Type ID": "47",
+                                            "Total Cost": 15122.682292,
+                                            "Plan Rows": 77.0,
+                                            "Plans": [
+                                                {
+                                                    "Node Type": "Seq Scan",
+                                                    "Node Type ID": "19",
+                                                    "Relation Name": "movie_info_idx",
+                                                    "Total Cost": 15122.682292,
+                                                    "Plan Rows": 77.0
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Node Type": "Index Only Scan",
+                            "Node Type ID": "22",
+                            "Relation Name": "title",
+                            "Total Cost": 8.399113,
+                            "Plan Rows": 1.0
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

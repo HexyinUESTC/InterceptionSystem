@@ -1,0 +1,50 @@
+[
+    {
+        "Plan": {
+            "Node Type": "Other",
+            "Node Type ID": "42",
+            "Total Cost": 58184.761187,
+            "Plan Rows": 1.0,
+            "Plans": [
+                {
+                    "Node Type": "Other",
+                    "Node Type ID": "45",
+                    "Total Cost": 58184.746187,
+                    "Plan Rows": 2.0,
+                    "Plans": [
+                        {
+                            "Node Type": "Other",
+                            "Node Type ID": "42",
+                            "Total Cost": 57184.546187,
+                            "Plan Rows": 1.0,
+                            "Plans": [
+                                {
+                                    "Node Type": "Nested Loop",
+                                    "Node Type ID": "36",
+                                    "Total Cost": 57182.716187,
+                                    "Plan Rows": 728.0,
+                                    "Plans": [
+                                        {
+                                            "Node Type": "Seq Scan",
+                                            "Node Type ID": "19",
+                                            "Relation Name": "movie_keyword",
+                                            "Total Cost": 48016.135417,
+                                            "Plan Rows": 1182.0
+                                        },
+                                        {
+                                            "Node Type": "Index Scan",
+                                            "Node Type ID": "21",
+                                            "Relation Name": "title",
+                                            "Total Cost": 7.755144,
+                                            "Plan Rows": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

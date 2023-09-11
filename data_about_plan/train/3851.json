@@ -1,0 +1,35 @@
+[
+    {
+        "Plan": {
+            "Node Type": "Other",
+            "Node Type ID": "42",
+            "Total Cost": 36840.89375,
+            "Plan Rows": 1.0,
+            "Plans": [
+                {
+                    "Node Type": "Other",
+                    "Node Type ID": "45",
+                    "Total Cost": 36840.87875,
+                    "Plan Rows": 2.0,
+                    "Plans": [
+                        {
+                            "Node Type": "Other",
+                            "Node Type ID": "42",
+                            "Total Cost": 35840.67875,
+                            "Plan Rows": 1.0,
+                            "Plans": [
+                                {
+                                    "Node Type": "Seq Scan",
+                                    "Node Type ID": "19",
+                                    "Relation Name": "movie_companies",
+                                    "Total Cost": 35097.05625,
+                                    "Plan Rows": 297445.0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

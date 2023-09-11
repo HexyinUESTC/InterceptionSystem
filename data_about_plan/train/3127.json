@@ -1,0 +1,35 @@
+[
+    {
+        "Plan": {
+            "Node Type": "Other",
+            "Node Type ID": "42",
+            "Total Cost": 480366.703333,
+            "Plan Rows": 1.0,
+            "Plans": [
+                {
+                    "Node Type": "Other",
+                    "Node Type ID": "45",
+                    "Total Cost": 480366.688333,
+                    "Plan Rows": 2.0,
+                    "Plans": [
+                        {
+                            "Node Type": "Other",
+                            "Node Type ID": "42",
+                            "Total Cost": 479366.488333,
+                            "Plan Rows": 1.0,
+                            "Plans": [
+                                {
+                                    "Node Type": "Seq Scan",
+                                    "Node Type ID": "19",
+                                    "Relation Name": "cast_info",
+                                    "Total Cost": 441729.083333,
+                                    "Plan Rows": 15054958.0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
